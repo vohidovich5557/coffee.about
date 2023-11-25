@@ -1,0 +1,139 @@
+.country {
+    padding-top: 120px;
+}
+
+.country__title {
+    color: #83888F;
+    text-align: center;
+    font-size: 24px;
+    font-weight: 900;
+    line-height: 32px;
+    /* 133.333% */
+    margin-bottom: 72px;
+}
+
+.card_list {
+    max-width: 326px;
+    text-align: center;
+    margin-bottom: 80px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.card_list::before {
+    content: "";
+    display: inline-block;
+    background-image: url(../img/kingdom.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 40px;
+    height: 49px;
+    margin-bottom: 47px;
+}
+
+.card_list:nth-child(2)::before {
+    content: "";
+    display: inline-block;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 40px;
+    height: 49px;
+    background-image: url(../img/canada.svg);
+}
+
+.card_list:nth-child(3)::before {
+    content: "";
+    display: inline-block;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-image: url(../img/australia.svg);
+    width: 40px;
+    height: 49px;
+}
+
+.card_info {
+    text-align: center;
+}
+
+.info__title {
+    color: #333D4B;
+    font-size: 28px;
+    font-weight: 900;
+    line-height: 36px;
+    /* 128.571% */
+    margin-bottom: 22px;
+}
+
+.info__text {
+    color: #333D4B;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 26px;
+    /* 162.5% */
+}
+
+@media screen and (min-width: 765px) {
+    .country__title {
+        text-align: left;
+        font-size: 24px;
+        font-weight: 900;
+        line-height: 32px;
+    }
+
+    .card_items {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+    }
+
+    .card_info {
+        text-align: left;
+    }
+
+    .card_list {
+        text-align: left;
+    }
+
+    .info__title {
+        font-size: 24px;
+        font-weight: 900;
+        line-height: 36px;
+        margin-bottom: 21px;
+    }
+
+    .info__text {
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 26px;
+    }
+
+}
+
+@media screen and (min-width: 992px) {
+    .country__title {
+        padding-left: 85px;
+        font-size: 24px;
+        font-weight: 900;
+        line-height: 32px;
+    }
+
+    .card_items {
+        gap: 95px;
+    }
+
+    .info__title {
+        color: #333D4B;
+
+        font-family: Fraunces 9pt;
+        font-size: 32px;
+        font-weight: 900;
+        line-height: 36px;
+        margin-bottom: 24px;
+    }
+
+    .info__text {
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 26px;
+    }
+}
